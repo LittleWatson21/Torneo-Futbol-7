@@ -44,5 +44,95 @@ namespace Examen_Parcial_3
         {
             comboEquipos.Items.Add(txtNombreEquipo.Text);
         }
+
+        private void txtNombreEquipo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listEquipos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboEquipos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textNombreJugador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdadJugador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textNacionalidadJugador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textPosicionJugador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarJugador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listJugadores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listJornadas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listEnfrentamientos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listLocales_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkSejugo_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listVisitantes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
