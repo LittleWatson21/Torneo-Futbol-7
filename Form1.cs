@@ -19,6 +19,7 @@ namespace Examen_Parcial_3
         Equipo equiposeleccionado;
         Jugador jugadorseleccionado;
         Jornada jornadaseleccionada;
+        Enfrentamiento enfrentamiento;
         List<Jornada> jornadas;
         public Form1()
         {
@@ -58,7 +59,6 @@ namespace Examen_Parcial_3
             Equipo equipo = new Equipo(txtNombreEquipo.Text);
             equipos.Add(equipo);
             updateequiposeleccionado(equipo);
-
             listEquipos.Items.Add(txtNombreEquipo.Text);
             listLocales.Items.Add(txtNombreEquipo.Text);
             listVisitantes.Items.Add(txtNombreEquipo.Text);
@@ -261,6 +261,21 @@ namespace Examen_Parcial_3
             listJornadas.Items.Add(jornada);
         }
 
-      
+        private void btnEnfrentamiento_Click(object sender, EventArgs e)
+        {
+
+            //listLocales.SelectedIndex
+            Equipo equipoLocal = equipos.ElementAt(listLocales.SelectedIndex);
+            Equipo equipoVisitante = equipos.ElementAt(listVisitantes.SelectedIndex);
+            bool sejugo = checkSejugo.Checked;
+            int goleslocal = Convert.ToInt32(textGolesLocal.Text);
+            int golesvisitante = Convert.ToInt32(textGolesVisitante.Text);
+
+            enfrentamiento = new Enfrentamiento(equipoLocal, equipoVisitante, sejugo, goleslocal, golesvisitante);
+            jornadaseleccionada.agregarEnfrentamiento(enfrentamiento);
+
+
+
+        }   
     }
 }

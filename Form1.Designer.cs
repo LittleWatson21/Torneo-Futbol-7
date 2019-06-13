@@ -311,7 +311,6 @@ namespace Examen_Parcial_3
             this.listLocales.Name = "listLocales";
             this.listLocales.Size = new System.Drawing.Size(120, 95);
             this.listLocales.TabIndex = 26;
-            this.listLocales.SelectedIndexChanged += new System.EventHandler(this.listLocales_SelectedIndexChanged);
             // 
             // listVisitantes
             // 
@@ -364,7 +363,7 @@ namespace Examen_Parcial_3
             this.btnEnfrentamiento.TabIndex = 32;
             this.btnEnfrentamiento.Text = "Guardar enfrentamiento";
             this.btnEnfrentamiento.UseVisualStyleBackColor = true;
-            this.btnEnfrentamiento.Click += new System.EventHandler(this.button1_Click);
+            this.btnEnfrentamiento.Click += new System.EventHandler(this.btnEnfrentamiento_Click);
             // 
             // listJornadas
             // 
