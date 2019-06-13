@@ -33,6 +33,7 @@ namespace Examen_Parcial_3
             int edad = Convert.ToInt16(textEdadJugador.Text);
             jugador = new Jugador(nombre,posicion,numero,nacionalidad,edad);
             listJugadores.Items.Add(jugador.ToString());
+            
         }
 
         private void textNumeroJugador_TextChanged(object sender, EventArgs e)
@@ -43,6 +44,9 @@ namespace Examen_Parcial_3
         private void btnAgregarEquipo_Click(object sender, EventArgs e)
         {
             comboEquipos.Items.Add(txtNombreEquipo.Text);
+            listEquipos.Items.Add(txtNombreEquipo.Text);
+            listLocales.Items.Add(txtNombreEquipo.Text);
+            listVisitantes.Items.Add(txtNombreEquipo.Text);
         }
 
         private void txtNombreEquipo_TextChanged(object sender, EventArgs e)
@@ -57,7 +61,7 @@ namespace Examen_Parcial_3
 
         private void listEquipos_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void comboEquipos_SelectedIndexChanged(object sender, EventArgs e)
@@ -131,6 +135,11 @@ namespace Examen_Parcial_3
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitante_Click(object sender, EventArgs e)
         {
 
         }
