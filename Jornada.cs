@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +17,15 @@ namespace Examen_Parcial_3
             enfrentamientos = new List<Enfrentamiento>();
         }
 
-        public void agregarEnfrentamiento (Equipo local, Equipo visitante)
-        {
 
+        public void agregarEnfrentamiento (Enfrentamiento enfrentamiento)
+        {
+            enfrentamientos.Add(enfrentamiento);
+        }
+
+        public override string ToString()
+        {
+            return "Jornada: " + numero;
         }
     }
 }

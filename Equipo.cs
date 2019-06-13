@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +9,11 @@ namespace Examen_Parcial_3
     class Equipo
     {
         public string Nombre { get; }
-        List<Jugador> jugadores;
+        public List<Jugador> jugadores { get; }
         
         public Equipo(string nombre)
         {
-            nombre = Nombre;
+            Nombre = nombre;
             jugadores = new List<Jugador>();
         }
 

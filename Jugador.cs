@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,18 +16,16 @@ namespace Examen_Parcial_3
 
         public Jugador(string NombreJugador, string Posicion, int NumeroPlayera, string Nacionalidad, int Edad)
         {
-            NombreJugador = nombre_Jugador;
-            Posicion= posicion;
-            Nacionalidad= nacionalidad;
-            Edad = edad;
-            NumeroPlayera = numero_playera;
+            nombre_Jugador = NombreJugador ;
+            posicion = Posicion;
+            nacionalidad =Nacionalidad;
+            edad = Edad;
+            numero_playera = NumeroPlayera;
         }
         public override string ToString()
         {
-            return "Nombre del jugador: " + nombre_Jugador + Environment.NewLine
-                + "Edad:" + edad + Environment.NewLine + "Número del jugador" + numero_playera + Environment.NewLine
-                + "Posición: " + posicion + Environment.NewLine 
-                + "Nacionalidad: " + nacionalidad + Environment.NewLine;
+            return nombre_Jugador;
+           
         }
     }
 }
