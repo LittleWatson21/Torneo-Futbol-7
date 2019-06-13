@@ -122,7 +122,7 @@ namespace Examen_Parcial_3
 
         private void listJornadas_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            jornadaseleccionada = jornadas.ElementAt(listJornadas.SelectedIndex);
         }
 
         private void listEnfrentamientos_SelectedIndexChanged(object sender, EventArgs e)
@@ -273,9 +273,17 @@ namespace Examen_Parcial_3
 
             enfrentamiento = new Enfrentamiento(equipoLocal, equipoVisitante, sejugo, goleslocal, golesvisitante);
             jornadaseleccionada.agregarEnfrentamiento(enfrentamiento);
-
-
-
+            updateEnfrentamiento();
         }   
+
+
+        private void updateEnfrentamiento()
+        {
+            listEnfrentamientos.Items.Clear();
+            for(int i = 0; i < jornadaseleccionada.enfrentamientos.Count; i++)
+            {
+                listEnfrentamientos.Items.Add(jornadaseleccionada.enfrentamientos[i]);
+            }
+        }
     }
 }

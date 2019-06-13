@@ -10,7 +10,7 @@ namespace Examen_Parcial_3
     {
         public int numero { get; }
 
-        List<Enfrentamiento> enfrentamientos;
+        public List<Enfrentamiento> enfrentamientos { get;  }
         public  Jornada(int Numero)
         {
             numero = Numero;

@@ -43,5 +43,10 @@ namespace Examen_Parcial_3
             }
         }
 
+        public override string ToString()
+        {
+            return local.Nombre + " vs " + visitante.Nombre;
+        }
+
     }
 }
